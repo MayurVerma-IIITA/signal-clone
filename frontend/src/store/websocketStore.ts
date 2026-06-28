@@ -43,7 +43,7 @@ export const useWebSocketStore = create<WebSocketState>((set, get) => ({
           
           // Update conversation last message and unread count
           const convs = useConversationStore.getState().conversations;
-          const conv = convs.find(c => c.id === msg.conversation_id);
+          const conv = convs.find((c: any) => c.id === msg.conversation_id);
           
           if (conv) {
             let newUnread = conv.unread_count;
