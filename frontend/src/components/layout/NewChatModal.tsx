@@ -73,7 +73,7 @@ export function NewChatModal() {
               </Avatar>
               <div>
                 <p className="text-sm font-medium">{user.display_name}</p>
-                <p className="text-xs text-gray-500">@{user.username}</p>
+                <p className="text-xs text-gray-500">{user.phone_number}</p>
               </div>
             </div>
           ))}
